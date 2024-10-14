@@ -1,0 +1,23 @@
+[package]
+name = "tradingview_http_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# http
+http = "1.0.0"
+http_server = { path = "../http_server" }
+# logging
+log = "0.4.20"
+env_logger = "0.11.5"
+# async
+async-executor = "1.13.0"
+# async macros
+smol-macros = "0.1.1"
+macro_rules_attribute = "0.2.0"
+# tradingview
+tradingview_websocket_client = { path = "../tradingview_websocket_client" }
+# json
+miniserde = "0.1.40"
+# errors
+anyhow = "1.0.89"
